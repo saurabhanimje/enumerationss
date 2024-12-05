@@ -12,5 +12,12 @@ public class StudentServiceImpl implements StudentService
 	@Autowired
 	private StudentRepository sr;
 
+	@Override
+
+	public Student postStudentData(Student student) {
+	
+		return sr.save(student);
+	}
+
 	
 }
